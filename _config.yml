@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
+title                    : "Gabriel Griffin"
 title_separator          : "-"
 name                     : &name "Gabriel Griffin"
 description              : &description "Gabriel Griffin's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -27,10 +27,10 @@ author:
   name             : "Your Sidebar Name"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "Norman, Okahoma"
+  employer         : "University of Oklahoma"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "gabrielgriffin@ou.edu" 
 
   # Academic websites
   academia         : # URL
