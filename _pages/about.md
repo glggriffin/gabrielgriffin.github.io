@@ -31,19 +31,19 @@ GPA: 4.0/4.0
   </div>
   <figure class="about-experience__media">
     <img src="{{ base_path }}/images/Net%20Sys%20Photo.JPG" alt="NetSys Research Lab group photo">
-    <figcaption>NetSys Research Lab group photo.</figcaption>
+    <figcaption>NetSys Research Lab group photo (Dec. 2025).</figcaption>
   </figure>
 </div>
 
 <div class="about-experience">
   <div class="about-experience__text">
-    <p><strong>Undergraduate Researcher</strong>, Tucker Research Group<br>
+    <p><strong>Undergraduate Research Assistiant</strong>, Tucker Research Group<br>
     Clemson Industrial Engineering, Clemson, SC<br>
     May 2025 - Jul 2025</p>
   </div>
   <figure class="about-experience__media">
     <img src="{{ base_path }}/images/TRG%20Picture.jpg" alt="Tucker Research Group photo">
-    <figcaption>Tucker Research Group photo.</figcaption>
+    <figcaption>Tucker Research Group photo (Jul. 2025).</figcaption>
   </figure>
 </div>
 

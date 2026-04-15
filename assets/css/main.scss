@@ -60,7 +60,8 @@ body[data-theme="dark"] {
 #particles-js {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
+  pointer-events: none;
   background: var(--particles-bg);
 }
 
@@ -87,6 +88,12 @@ body[data-theme="dark"] {
 }
 
 .with-particles {
+  position: relative;
+  z-index: 1;
+}
+
+#main,
+.page__footer {
   position: relative;
   z-index: 1;
 }
