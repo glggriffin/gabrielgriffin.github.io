@@ -23,7 +23,7 @@ repository               : "glggriffin/gabrielgriffin.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "Headshot.jpeg"
+  avatar           : "/images/Headshot.jpeg"
   name             : "Gabriel Griffin"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
@@ -84,12 +84,15 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
+  PrePrints:
+    title: 'Pre Prints'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  posters:
+    title: 'Posters'
+  
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
