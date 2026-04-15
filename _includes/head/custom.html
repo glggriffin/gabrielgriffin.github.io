@@ -16,8 +16,6 @@
 
 
 <!-- end custom head snippets -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
 <script>
 function getColor(varName) {
   return getComputedStyle(document.documentElement)
@@ -27,15 +25,9 @@ function getColor(varName) {
 
 function destroyParticles() {
   if (window.pJSDom && window.pJSDom.length) {
-    window.pJSDom.forEach(instance => {
-      if (
-        instance &&
-        instance.pJS &&
-        instance.pJS.fn &&
-        instance.pJS.fn.vendors &&
-        typeof instance.pJS.fn.vendors.destroypJS === "function"
-      ) {
-        instance.pJS.fn.vendors.destroypJS();
+    window.pJSDom.forEach(p => {
+      if (p?.pJS?.fn?.vendors?.destroypJS) {
+        p.pJS.fn.vendors.destroypJS();
       }
     });
     window.pJSDom = [];
@@ -97,9 +89,13 @@ function loadParticles() {
 document.addEventListener("DOMContentLoaded", function () {
   loadParticles();
 
-  const observer = new MutationObserver(() => {
-    requestAnimationFrame(loadParticles);
-  });
+  const reloadWithDelay = () => {
+    // 🔑 KEY FIX: wait for CSS to update before reading variables
+    setTimeout(loadParticles, 50);
+  };
+
+  // Watch for theme toggle (class or data-theme changes)
+  const observer = new MutationObserver(reloadWithDelay);
 
   observer.observe(document.documentElement, {
     attributes: true,
@@ -111,11 +107,12 @@ document.addEventListener("DOMContentLoaded", function () {
     attributeFilter: ["class", "data-theme"]
   });
 
+  // System theme fallback
   const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
   if (mediaQuery.addEventListener) {
-    mediaQuery.addEventListener("change", loadParticles);
-  } else if (mediaQuery.addListener) {
-    mediaQuery.addListener(loadParticles);
+    mediaQuery.addEventListener("change", reloadWithDelay);
+  } else {
+    mediaQuery.addListener(reloadWithDelay);
   }
 });
 </script>
