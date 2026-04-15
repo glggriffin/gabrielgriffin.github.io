@@ -26,15 +26,17 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
   </svg>
   <div class="experience-journey__entries">
     <div class="about-experience" data-journey-stop="norman">
-      <div class="about-experience__text">
-        <h3><a href="https://andresdgonzalez.com/">NetSys Research Lab</a></h3>
-        <p>The NetSys Research Lab at the University of Oklahoma focuses on modeling and optimizing the performance, robustness, and resilience of cyber-physical-social systems and interdependent networks.</p>
-        <p>The group's work spans complex infrastructure and networked systems, with particular emphasis on how optimization and systems modeling can support more resilient decision-making.</p>
+      <div class="about-experience__content">
+        <div class="about-experience__text">
+          <h3><a href="https://andresdgonzalez.com/">NetSys Research Lab</a></h3>
+          <p>The NetSys Research Lab at the University of Oklahoma focuses on modeling and optimizing the performance, robustness, and resilience of cyber-physical-social systems and interdependent networks.</p>
+          <p>The group's work spans complex infrastructure and networked systems, with particular emphasis on how optimization and systems modeling can support more resilient decision-making.</p>
+        </div>
+        <figure class="about-experience__media">
+          <img src="{{ base_path }}/images/Net%20Sys%20Photo.JPG" alt="NetSys Research Lab group photo">
+          <figcaption>NetSys Research Lab group photo (Dec. 2025)</figcaption>
+        </figure>
       </div>
-      <figure class="about-experience__media">
-        <img src="{{ base_path }}/images/Net%20Sys%20Photo.JPG" alt="NetSys Research Lab group photo">
-        <figcaption>NetSys Research Lab group photo (Dec. 2025)</figcaption>
-      </figure>
       <aside class="journey-state-card" aria-label="Oklahoma research location">
         <p class="journey-state-card__eyebrow">2025-2026</p>
         <div class="journey-state-card__map">
@@ -48,15 +50,17 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
     </div>
 
     <div class="about-experience" data-journey-stop="clemson">
-      <div class="about-experience__text">
-        <h3><a href="https://sites.google.com/view/emilyltucker/home?authuser=0">Tucker Research Group</a></h3>
-        <p>The Tucker Research Group at Clemson University studies how operations research can improve access, social good, and decision-making in systems under strain.</p>
-        <p>The lab develops optimization methods for problems with real public impact, especially where limited resources, uncertainty, and system-level tradeoffs shape the choices decision-makers can make.</p>
+      <div class="about-experience__content">
+        <div class="about-experience__text">
+          <h3><a href="https://sites.google.com/view/emilyltucker/home?authuser=0">Tucker Research Group</a></h3>
+          <p>The Tucker Research Group at Clemson University studies how operations research can improve access, social good, and decision-making in systems under strain.</p>
+          <p>The lab develops optimization methods for problems with real public impact, especially where limited resources, uncertainty, and system-level tradeoffs shape the choices decision-makers can make.</p>
+        </div>
+        <figure class="about-experience__media">
+          <img src="{{ base_path }}/images/TRG%20Picture.jpg" alt="Tucker Research Group photo">
+          <figcaption>Tucker Research Group photo (Jul. 2025)</figcaption>
+        </figure>
       </div>
-      <figure class="about-experience__media">
-        <img src="{{ base_path }}/images/TRG%20Picture.jpg" alt="Tucker Research Group photo">
-        <figcaption>Tucker Research Group photo (Jul. 2025)</figcaption>
-      </figure>
       <aside class="journey-state-card" aria-label="South Carolina research location">
         <p class="journey-state-card__eyebrow">2025</p>
         <div class="journey-state-card__map">
