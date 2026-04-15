@@ -24,57 +24,67 @@ GPA: 4.0/4.0
 ## Experience
 
 <div id="experience-journey" class="experience-journey">
-  <aside class="experience-journey__graphic" aria-hidden="true">
-    <div class="experience-journey__panel">
-      <p class="experience-journey__eyebrow">Research Journey</p>
-      <h3 class="experience-journey__title">Moving between labs</h3>
-      <p class="experience-journey__note">Scroll through the section to move the marker between my research homes in Norman and Clemson.</p>
-
-      <svg class="journey-map" viewBox="0 0 520 320">
-        <path class="journey-map__land" d="M53 151 61 108 91 84 121 79 148 54 212 44 272 57 326 51 376 70 426 78 463 106 457 132 430 151 410 182 425 211 401 236 353 250 316 268 263 258 218 274 171 255 122 260 88 233 92 194Z" />
-        <path id="journey-route" class="journey-map__route" d="M176 232 C203 191 248 163 293 172 C326 178 352 198 372 221" />
-
-        <g class="journey-map__city">
-          <circle cx="176" cy="232" r="10"></circle>
-          <text x="118" y="257">Norman, OK</text>
-        </g>
-
-        <g class="journey-map__city">
-          <circle cx="372" cy="221" r="10"></circle>
-          <text x="345" y="201">Clemson, SC</text>
-        </g>
-
-        <g id="journey-traveler" class="journey-map__traveler" transform="translate(176 232)">
-          <circle r="16"></circle>
-          <text text-anchor="middle" dominant-baseline="central">GG</text>
-        </g>
-      </svg>
-    </div>
-  </aside>
-
   <div class="experience-journey__entries">
-    <div class="about-experience">
+    <div class="about-experience" data-journey-stop="norman">
       <div class="about-experience__text">
         <p><strong>Undergraduate Research Assistant</strong>, NetSys Research Lab<br>
         University of Oklahoma, Norman, OK<br>
         Sep 2025 - Present</p>
       </div>
-      <figure class="about-experience__media">
-        <img src="{{ base_path }}/images/Net%20Sys%20Photo.JPG" alt="NetSys Research Lab group photo">
-        <figcaption>NetSys Research Lab group photo (Dec. 2025)</figcaption>
-      </figure>
+      <div class="about-experience__visual">
+        <figure class="about-experience__media">
+          <img src="{{ base_path }}/images/Net%20Sys%20Photo.JPG" alt="NetSys Research Lab group photo">
+          <figcaption>NetSys Research Lab group photo (Dec. 2025)</figcaption>
+        </figure>
+
+        <aside class="journey-state-card" aria-label="Oklahoma research location">
+          <p class="journey-state-card__eyebrow">Current stop</p>
+          <h4 class="journey-state-card__title">Oklahoma</h4>
+          <svg class="journey-state-card__map" viewBox="0 0 220 150">
+            <path class="journey-state-card__outline" d="M23 44 L43 31 L87 31 L95 24 L164 24 L164 34 L195 34 L195 86 L170 86 L170 108 L134 108 L126 116 L90 116 L90 108 L23 108 Z"></path>
+            <g class="journey-state-card__city">
+              <circle cx="116" cy="74" r="7"></circle>
+              <circle class="journey-state-card__pulse" cx="116" cy="74" r="12"></circle>
+              <text x="128" y="79">Norman</text>
+            </g>
+          </svg>
+        </aside>
+      </div>
     </div>
 
-    <div class="about-experience">
+    <div class="experience-journey__connector" aria-hidden="true">
+      <p class="experience-journey__connector-label">Research trail</p>
+      <svg class="experience-journey__connector-map" viewBox="0 0 360 140">
+        <path id="journey-connector-path" class="experience-journey__connector-path" d="M24 112 C88 20 204 18 336 92"></path>
+        <circle id="journey-connector-traveler" class="experience-journey__connector-traveler" cx="24" cy="112" r="8"></circle>
+      </svg>
+    </div>
+
+    <div class="about-experience" data-journey-stop="clemson">
       <div class="about-experience__text">
         <p><strong>Undergraduate Research Assistant</strong>, Tucker Research Group<br>
         Clemson Industrial Engineering, Clemson, SC<br>
         May 2025 - Jul 2025</p>
       </div>
-      <figure class="about-experience__media">
-        <img src="{{ base_path }}/images/TRG%20Picture.jpg" alt="Tucker Research Group photo">
-        <figcaption>Tucker Research Group photo (Jul. 2025)</figcaption>
-      </figure>
+      <div class="about-experience__visual">
+        <figure class="about-experience__media">
+          <img src="{{ base_path }}/images/TRG%20Picture.jpg" alt="Tucker Research Group photo">
+          <figcaption>Tucker Research Group photo (Jul. 2025)</figcaption>
+        </figure>
+
+        <aside class="journey-state-card" aria-label="South Carolina research location">
+          <p class="journey-state-card__eyebrow">Summer stop</p>
+          <h4 class="journey-state-card__title">South Carolina</h4>
+          <svg class="journey-state-card__map" viewBox="0 0 220 170">
+            <path class="journey-state-card__outline" d="M86 18 L110 30 L118 49 L129 56 L146 84 L141 101 L126 113 L123 130 L108 149 L91 146 L87 128 L77 118 L66 120 L58 110 L62 92 L54 78 L62 63 L71 60 L77 45 L86 39 Z"></path>
+            <g class="journey-state-card__city">
+              <circle cx="109" cy="93" r="7"></circle>
+              <circle class="journey-state-card__pulse" cx="109" cy="93" r="12"></circle>
+              <text x="121" y="98">Clemson</text>
+            </g>
+          </svg>
+        </aside>
+      </div>
     </div>
   </div>
 </div>
@@ -84,26 +94,45 @@ GPA: 4.0/4.0
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const section = document.getElementById("experience-journey");
-    const route = document.getElementById("journey-route");
-    const traveler = document.getElementById("journey-traveler");
+    const path = document.getElementById("journey-connector-path");
+    const traveler = document.getElementById("journey-connector-traveler");
+    const stops = section ? Array.from(section.querySelectorAll("[data-journey-stop]")) : [];
 
-    if (!section || !route || !traveler) {
+    if (!section || !path || !traveler || stops.length < 2) {
       return;
     }
 
     const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
-    const routeLength = route.getTotalLength();
+    const pathLength = path.getTotalLength();
+    path.style.strokeDasharray = pathLength;
+    path.style.strokeDashoffset = pathLength;
+
+    const setActiveStop = (activeIndex) => {
+      stops.forEach((stop, index) => {
+        stop.classList.toggle("is-active", index === activeIndex);
+      });
+    };
 
     const updateJourney = () => {
-      const rect = section.getBoundingClientRect();
+      const secondStop = stops[1];
+      const secondRect = secondStop.getBoundingClientRect();
       const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-      const progress = clamp(
-        (viewportHeight * 0.62 - rect.top) / Math.max(rect.height - viewportHeight * 0.18, 1),
-        0,
-        1
-      );
-      const point = route.getPointAtLength(progress * routeLength);
-      traveler.setAttribute("transform", `translate(${point.x} ${point.y})`);
+      const focusLine = viewportHeight * 0.8;
+      const startLine = viewportHeight * 0.94;
+      const endLine = viewportHeight * 0.72;
+      const progress = clamp((startLine - secondRect.top) / (startLine - endLine), 0, 1);
+      const activeIndex = stops.reduce((currentIndex, stop, index) => {
+        return stop.getBoundingClientRect().top <= focusLine ? index : currentIndex;
+      }, 0);
+      const drawnLength = pathLength * progress;
+      const point = path.getPointAtLength(drawnLength);
+
+      setActiveStop(activeIndex);
+      path.style.strokeDashoffset = pathLength - drawnLength;
+      traveler.setAttribute("cx", point.x);
+      traveler.setAttribute("cy", point.y);
+      traveler.style.opacity = progress > 0.02 ? "1" : "0";
+      section.classList.toggle("is-traveling", progress > 0.04 && progress < 0.98);
     };
 
     updateJourney();
