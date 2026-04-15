@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <div id="particles-js"></div>
-<div class="page__content with-particles">
+<div class="page__content with-particles" markdown="1">
 
 I am Gabriel Griffin, an Industrial and Systems Engineering student at the University of Oklahoma pursuing honors coursework with a minor in Mathematics. My academic interests include optimization, decision-making, and networked systems, and I use this site to document my research, experience, and professional development.
 
