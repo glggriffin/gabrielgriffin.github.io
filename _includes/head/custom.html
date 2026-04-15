@@ -14,139 +14,108 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
-
 <!-- end custom head snippets -->
 
-
-
-
-
-#particles 
-
 <script>
-
-:root {
-  --particles-bg: #f3f4f6;
-  --particles-node: #374151;
-  --particles-line: #6b7280;
-
-  --background-color: #f3f4f6;
-  --masthead-background-color: #f3f4f6;
-  --footer-background-color: #f3f4f6;
-  --text-color: #111827;
-  --link-color: #111827;
-}
-
-html.dark,
-body.dark,
-html[data-theme="dark"],
-body[data-theme="dark"] {
-  --particles-bg: #111827;
-  --particles-node: #e5e7eb;
-  --particles-line: #9ca3af;
-
-  --background-color: #111827;
-  --masthead-background-color: #111827;
-  --footer-background-color: #111827;
-  --text-color: #f9fafb;
-  --link-color: #f9fafb;
-}
-function getColor(varName) {
-  return getComputedStyle(document.documentElement)
-    .getPropertyValue(varName)
-    .trim();
-}
-
-function destroyParticles() {
-  if (window.pJSDom && window.pJSDom.length) {
-    window.pJSDom.forEach(p => {
-      if (p?.pJS?.fn?.vendors?.destroypJS) {
-        p.pJS.fn.vendors.destroypJS();
-      }
-    });
-    window.pJSDom = [];
+  function getParticleColor(varName) {
+    return getComputedStyle(document.documentElement)
+      .getPropertyValue(varName)
+      .trim();
   }
 
-  const el = document.getElementById("particles-js");
-  if (el) el.innerHTML = "";
-}
+  function destroyParticles() {
+    if (window.pJSDom && window.pJSDom.length) {
+      window.pJSDom.forEach((instance) => {
+        if (instance && instance.pJS && instance.pJS.fn && instance.pJS.fn.vendors && instance.pJS.fn.vendors.destroypJS) {
+          instance.pJS.fn.vendors.destroypJS();
+        }
+      });
+      window.pJSDom = [];
+    }
 
-function loadParticles() {
-  const el = document.getElementById("particles-js");
-  if (!el || typeof particlesJS === "undefined") return;
+    const container = document.getElementById("particles-js");
+    if (container) {
+      container.innerHTML = "";
+    }
+  }
 
-  destroyParticles();
+  function loadParticles() {
+    const container = document.getElementById("particles-js");
+    if (!container || typeof particlesJS === "undefined") {
+      return;
+    }
 
-  particlesJS("particles-js", {
-    particles: {
-      number: {
-        value: 60,
-        density: { enable: true, value_area: 800 }
-      },
-      color: { value: getColor("--particles-node") },
-      shape: { type: "circle" },
-      opacity: { value: 0.35 },
-      size: { value: 3, random: true },
-      line_linked: {
-        enable: true,
-        distance: 180,
-        color: getColor("--particles-line"),
-        opacity: 0.2,
-        width: 1
-      },
-      move: {
-        enable: true,
-        speed: 1.2,
-        direction: "none",
-        out_mode: "out"
-      }
-    },
-    interactivity: {
-      detect_on: "canvas",
-      events: {
-        onhover: { enable: true, mode: "grab" },
-        onclick: { enable: true, mode: "push" },
-        resize: true
-      },
-      modes: {
-        grab: {
-          distance: 160,
-          line_linked: { opacity: 0.35 }
+    destroyParticles();
+
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 60,
+          density: { enable: true, value_area: 800 }
         },
-        push: { particles_nb: 3 }
-      }
-    },
-    retina_detect: true
+        color: { value: getParticleColor("--particles-node") },
+        shape: { type: "circle" },
+        opacity: { value: 0.35 },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 180,
+          color: getParticleColor("--particles-line"),
+          opacity: 0.2,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1.2,
+          direction: "none",
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "grab" },
+          onclick: { enable: true, mode: "push" },
+          resize: true
+        },
+        modes: {
+          grab: {
+            distance: 160,
+            line_linked: { opacity: 0.35 }
+          },
+          push: { particles_nb: 3 }
+        }
+      },
+      retina_detect: true
+    });
+  }
+
+  function refreshParticlesTheme() {
+    window.setTimeout(loadParticles, 50);
+  }
+
+  window.refreshParticlesTheme = refreshParticlesTheme;
+
+  document.addEventListener("DOMContentLoaded", function () {
+    loadParticles();
+
+    const observer = new MutationObserver(refreshParticlesTheme);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class", "data-theme"]
+    });
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ["class", "data-theme"]
+    });
   });
-}
 
-document.addEventListener("DOMContentLoaded", function () {
-  loadParticles();
+  document.addEventListener("theme:changed", refreshParticlesTheme);
 
-  const reloadWithDelay = () => {
-    // 🔑 KEY FIX: wait for CSS to update before reading variables
-    setTimeout(loadParticles, 50);
-  };
-
-  // Watch for theme toggle (class or data-theme changes)
-  const observer = new MutationObserver(reloadWithDelay);
-
-  observer.observe(document.documentElement, {
-    attributes: true,
-    attributeFilter: ["class", "data-theme"]
-  });
-
-  observer.observe(document.body, {
-    attributes: true,
-    attributeFilter: ["class", "data-theme"]
-  });
-
-  // System theme fallback
   const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
   if (mediaQuery.addEventListener) {
-    mediaQuery.addEventListener("change", reloadWithDelay);
+    mediaQuery.addEventListener("change", refreshParticlesTheme);
   } else {
-    mediaQuery.addListener(reloadWithDelay);
+    mediaQuery.addListener(refreshParticlesTheme);
   }
-});
 </script>
