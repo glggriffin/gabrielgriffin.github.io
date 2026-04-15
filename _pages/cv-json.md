@@ -13,5 +13,6 @@ redirect_from:
 
 <div class="cv-download-links">
   <a href="{{ base_path }}/files/Gabriel%20Griffin%20CV.pdf" class="btn btn--primary">Download CV as PDF</a>
+  <a href="{{ base_path }}/files/Gabriel%20Griffin%20Transcript.pdf" class="btn btn--inverse">Download Transcript</a>
   <a href="{{ base_path }}/cv/" class="btn btn--inverse">View Markdown CV</a>
 </div>

@@ -11,6 +11,8 @@ redirect_from:
 
 [Download PDF CV]({{ base_path }}/files/Gabriel%20Griffin%20CV.pdf){: .btn .btn--primary}
 
+[Download Transcript]({{ base_path }}/files/Gabriel%20Griffin%20Transcript.pdf){: .btn .btn--inverse}
+
 Profile
 ======
 Industrial and Systems Engineering student at the University of Oklahoma pursuing research in optimization, decision-making, and networked systems.
@@ -94,4 +96,3 @@ Certifications and Licenses
 * **Responsible Conduct of Research - 69668691**, CITI Program, May 2025
 * **Lean Six Sigma Yellow Belt**, University of Oklahoma, May 2024
 * **Human Subjects Protections - 69668690**, CITI Program, May 2025 - May 2027
-
