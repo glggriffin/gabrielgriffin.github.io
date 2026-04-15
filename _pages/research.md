@@ -13,40 +13,30 @@ My research sits at the intersection of optimization, decision-making, and netwo
 
 <div class="research-projects">
   <section class="research-project">
-    <figure class="research-project__media">
-      <img src="{{ base_path }}/images/Net%20Sys%20Photo.JPG" alt="NetSys Research Lab group photo">
-      <figcaption>NetSys Research Lab, University of Oklahoma</figcaption>
-    </figure>
-
     <div class="research-project__body">
-      <p class="research-project__eyebrow">Current project</p>
-      <h2>Airline Network Resiliency</h2>
-      <p class="research-project__meta">NetSys Research Lab - University of Oklahoma - Sep 2025 - Present</p>
+      <p class="research-project__eyebrow">Current research idea</p>
+      <h2>Airline Network Resiliency and Disruption Response</h2>
+      <p class="research-project__meta">NetSys Research Lab - University of Oklahoma</p>
 
-      <p>This project studies how airline networks respond to disruption and how their structure affects resiliency. My current work uses Dynamic Mode Decomposition (DMD) to analyze patterns in network behavior and identify how complex systems evolve over time.</p>
+      <p>I am interested in how airline networks respond to disruption and how network structure shapes resilience. This work asks how large transportation systems absorb shocks, where they are most vulnerable, and what kinds of models help explain those patterns.</p>
 
-      <p><strong>What I'm exploring:</strong> how network structure shapes robustness, how disruption patterns can be characterized from data, and how those insights can support better system-level planning.</p>
+      <p>My current research uses Dynamic Mode Decomposition and network-based analysis to study how system behavior evolves over time. More broadly, I see this area as a way to connect optimization and network science to questions about infrastructure reliability and planning under uncertainty.</p>
 
-      <p><strong>Methods and tools:</strong> Python, data analysis, dynamical systems ideas, and network-focused modeling.</p>
+      <p><strong>Why it matters:</strong> transportation networks are public-facing systems, and better models of resilience can support stronger planning decisions when disruptions are unavoidable.</p>
     </div>
   </section>
 
   <section class="research-project">
-    <figure class="research-project__media">
-      <img src="{{ base_path }}/images/TRG%20Picture.jpg" alt="Tucker Research Group photo">
-      <figcaption>Tucker Research Group, Clemson University</figcaption>
-    </figure>
-
     <div class="research-project__body">
-      <p class="research-project__eyebrow">Summer 2025 project</p>
-      <h2>Optimization for Park Planning Under Imperfect Information</h2>
-      <p class="research-project__meta">Tucker Research Group - Clemson Industrial Engineering - May 2025 - Jul 2025</p>
+      <p class="research-project__eyebrow">Research idea</p>
+      <h2>Optimization of Park Access Under Imperfect Information</h2>
+      <p class="research-project__meta">Tucker Research Group - Clemson Industrial Engineering</p>
 
-      <p>At Clemson, I worked on a project focused on facility decision-making for park placement in Greenville County, South Carolina. The broader goal was to better understand how planners can make location decisions when the data, priorities, or assumptions driving the model are not perfectly known.</p>
+      <p>I am interested in how optimization can support public planning when decision-makers must act with incomplete information and limited resources. My work on park accessibility focused on how planners evaluate need, how those evaluations depend on modeling assumptions, and how different scoring systems can produce conflicting recommendations.</p>
 
-      <p><strong>What I worked on:</strong> modeling regret in location decisions, studying how parameter choices affect recommendations, and helping connect optimization results to the practical setting faced by park planners.</p>
+      <p>This led me to questions about regret-based optimization, robustness, and the gap between a mathematical model and the real setting it is meant to inform. That broader idea continues to shape how I think about public-sector decision support.</p>
 
-      <p><strong>Methods and tools:</strong> mixed-integer optimization, bi-level modeling, geospatial analysis, and <code>gurobipy</code>.</p>
+      <p><strong>Why it matters:</strong> choices about public resources can have lasting community effects, and models are most useful when they stay honest about the uncertainty built into those decisions.</p>
     </div>
   </section>
 </div>

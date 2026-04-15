@@ -9,27 +9,24 @@ redirect_from:
 
 <div class="with-particles" markdown="1">
 
-Hello World! I'm currently an Undergraduate student in the School of Industrial and Systems Engineering at the University of Oklahoma with a minor in Mathematics. My academic interests include optimization, decision-making, and networked systems, and I use this site to document my research, experience, and professional development.
+I am an undergraduate student in Industrial and Systems Engineering at the University of Oklahoma with interests in optimization, decision-making, and public-sector systems. I study how to make better decisions when information is incomplete and resources are constrained, especially in systems that shape public outcomes.
 
-I have worked as an undergraduate researcher at both the University of Oklahoma and Clemson University, with projects focused on airline network resiliency and optimization for park planning under imperfect information.
+My work focuses on applying optimization methods to problems that directly affect the public good, including infrastructure planning, resource allocation, and policy-driven decision systems. I am particularly interested in settings where decision-makers must act using simplified models or limited information, and in how those limitations influence outcomes.
 
-## Education
+That perspective has shaped my research on park accessibility, where I explored how community scoring systems can lead to conflicting decisions and how regret-based optimization can help identify more robust choices under uncertainty. It also shapes my current work on airline network resiliency, where I am interested in how large systems respond to disruption and how model-based analysis can support better planning.
 
-**University of Oklahoma**, Norman, OK  
-*B.S. in Industrial and Systems Engineering (Honors)*  
-Minor in Mathematics  
-Expected Graduation: May 2027  
-GPA: 4.0/4.0
+I plan to pursue a PhD in Industrial Engineering, with the goal of developing optimization frameworks that better reflect the constraints and informational limits faced by real decision-makers. I am especially interested in applications in public policy and nonprofit operations, where better decision tools can have meaningful societal impact.
 
-## Experience
+## Research Journey
 
 <div id="experience-journey" class="experience-journey">
   <div class="experience-journey__entries">
     <div class="about-experience" data-journey-stop="norman">
       <div class="about-experience__text">
-        <p><strong>Undergraduate Research Assistant</strong>, NetSys Research Lab<br>
-        University of Oklahoma, Norman, OK<br>
-        Sep 2025 - Present</p>
+        <p class="about-experience__label">Current project</p>
+        <h3>Airline Network Resiliency</h3>
+        <p>At the NetSys Research Lab at the University of Oklahoma, I study how airline networks respond to disruption and how their structure affects resilience.</p>
+        <p>My current work uses Dynamic Mode Decomposition and network-based analysis to better understand how complex transportation systems evolve over time and where those systems are most vulnerable.</p>
       </div>
       <div class="about-experience__visual">
         <figure class="about-experience__media">
@@ -62,9 +59,10 @@ GPA: 4.0/4.0
 
     <div class="about-experience" data-journey-stop="clemson">
       <div class="about-experience__text">
-        <p><strong>Undergraduate Research Assistant</strong>, Tucker Research Group<br>
-        Clemson Industrial Engineering, Clemson, SC<br>
-        May 2025 - Jul 2025</p>
+        <p class="about-experience__label">Summer 2025 project</p>
+        <h3>Optimization for Park Planning</h3>
+        <p>At Clemson University, I worked on optimization models for park planning in Greenville County, South Carolina, with a focus on how imperfect information affects location decisions.</p>
+        <p>That project centered on regret-based optimization, geospatial analysis, and the challenge of building models that remain useful when the assumptions behind them are imperfect.</p>
       </div>
       <div class="about-experience__visual">
         <figure class="about-experience__media">
