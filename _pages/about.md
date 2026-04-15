@@ -10,3 +10,4 @@ redirect_from:
 Hello World! I am a third year undergraduate student in the School of Industrial & Systems Engineering at the University of Oklahoma. 
 
 
+## Education
