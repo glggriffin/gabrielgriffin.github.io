@@ -42,11 +42,25 @@
     "vendor/font-awesome/brands"
 ;
 
+:root {
+  --particles-bg: #f5f5f5;
+  --particles-node: #4fc3f7;
+  --particles-line: #4fc3f7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --particles-bg: #0f2027;
+    --particles-node: #4fc3f7;
+    --particles-line: #4fc3f7;
+  }
+}
+
 #particles-js {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background: #0f2027;
+  background: var(--particles-bg);
 }
 
 .with-particles {
