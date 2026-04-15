@@ -19,47 +19,74 @@
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
 <script>
+function getColor(varName) {
+  return getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
+}
+
+function loadParticles() {
+  const el = document.getElementById("particles-js");
+  if (!el || typeof particlesJS === "undefined") return;
+
+  el.innerHTML = "";
+
+  particlesJS("particles-js", {
+    particles: {
+      number: {
+        value: 60,
+        density: { enable: true, value_area: 800 }
+      },
+      color: { value: getColor("--particles-node") },
+      shape: { type: "circle" },
+      opacity: { value: 0.35 },
+      size: { value: 3, random: true },
+      line_linked: {
+        enable: true,
+        distance: 140,
+        color: getColor("--particles-line"),
+        opacity: 0.2,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1.2,
+        direction: "none",
+        out_mode: "out"
+      }
+    },
+    interactivity: {
+      detect_on: "canvas",
+      events: {
+        onhover: { enable: true, mode: "grab" },
+        onclick: { enable: true, mode: "push" },
+        resize: true
+      },
+      modes: {
+        grab: {
+          distance: 160,
+          line_linked: { opacity: 0.35 }
+        },
+        push: { particles_nb: 3 }
+      }
+    },
+    retina_detect: true
+  });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-  if (document.getElementById("particles-js")) {
-    particlesJS("particles-js", {
-      particles: {
-        number: {
-          value: 55,
-          density: { enable: true, value_area: 900 }
-        },
-        color: { value: "#4fc3f7" },
-        shape: { type: "circle" },
-        opacity: { value: 0.35 },
-        size: { value: 3, random: true },
-        line_linked: {
-          enable: true,
-          distance: 140,
-          color: "#4fc3f7",
-          opacity: 0.25,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 1.2,
-          direction: "none",
-          out_mode: "out"
-        }
-      },
-      interactivity: {
-        events: {
-          onhover: { enable: true, mode: "grab" },
-          onclick: { enable: true, mode: "push" }
-        },
-        modes: {
-          grab: {
-            distance: 160,
-            line_linked: { opacity: 0.4 }
-          },
-          push: { particles_nb: 3 }
-        }
-      },
-      retina_detect: true
-    });
-  }
+  loadParticles();
+
+  // React to theme toggle (Academic Pages uses class changes)
+  const observer = new MutationObserver(() => {
+    loadParticles();
+  });
+
+  observer.observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["class", "data-theme"]
+  });
+
+  // React to system dark/light mode
+  window.matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", loadParticles);
 });
 </script>
