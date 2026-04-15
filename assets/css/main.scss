@@ -239,11 +239,27 @@ body[data-theme="dark"] {
   overflow: visible;
 }
 
-.journey-state-card__map-image {
+.journey-state-card__map-shape {
   display: block;
   width: 100%;
   height: auto;
-  opacity: 0.94;
+  background: var(--journey-card-bg);
+  filter:
+    drop-shadow(0 0 0.7px var(--journey-map-stroke))
+    drop-shadow(0 0 0.7px var(--journey-map-stroke))
+    drop-shadow(0 0 0.7px var(--journey-map-stroke));
+}
+
+.journey-state-card__map-shape--oklahoma {
+  aspect-ratio: 157.58208 / 82.28;
+  -webkit-mask: url("/images/oklahoma-outline.svg") center / contain no-repeat;
+  mask: url("/images/oklahoma-outline.svg") center / contain no-repeat;
+}
+
+.journey-state-card__map-shape--south-carolina {
+  aspect-ratio: 92.90924 / 70.54403;
+  -webkit-mask: url("/images/south-carolina-outline.svg") center / contain no-repeat;
+  mask: url("/images/south-carolina-outline.svg") center / contain no-repeat;
 }
 
 .journey-state-card__marker {
@@ -324,6 +340,13 @@ body[data-theme="dark"] {
   stroke-linecap: round;
   stroke-dasharray: 2 14;
   filter: drop-shadow(0 6px 12px rgba(15, 23, 42, 0.18));
+}
+
+.experience-journey__traveler-dot {
+  fill: #dc2626;
+  stroke: var(--particles-bg);
+  stroke-width: 3;
+  filter: drop-shadow(0 4px 10px rgba(220, 38, 38, 0.35));
 }
 
 @keyframes journey-pulse {

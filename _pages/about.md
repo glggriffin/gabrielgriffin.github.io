@@ -22,6 +22,7 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
 <div id="experience-journey" class="experience-journey">
   <svg class="experience-journey__overlay" aria-hidden="true">
     <path id="journey-connector-path" class="experience-journey__connector-path" d=""></path>
+    <circle id="journey-traveler-dot" class="experience-journey__traveler-dot" cx="0" cy="0" r="6"></circle>
   </svg>
   <div class="experience-journey__entries">
     <div class="about-experience" data-journey-stop="norman">
@@ -36,13 +37,11 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
       </figure>
       <aside class="journey-state-card" aria-label="Oklahoma research location">
         <p class="journey-state-card__eyebrow">2025-2026</p>
-        <h4 class="journey-state-card__title">Oklahoma</h4>
         <div class="journey-state-card__map">
-          <img class="journey-state-card__map-image" src="{{ base_path }}/images/oklahoma-location-map.svg" alt="Map of Oklahoma">
+          <div class="journey-state-card__map-shape journey-state-card__map-shape--oklahoma" aria-hidden="true"></div>
           <div class="journey-state-card__marker" data-city-marker style="--marker-x: 64.0058%; --marker-y: 52.0377%;">
             <span class="journey-state-card__pulse"></span>
             <span class="journey-state-card__dot"></span>
-            <span class="journey-state-card__city-label">Norman</span>
           </div>
         </div>
       </aside>
@@ -60,13 +59,11 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
       </figure>
       <aside class="journey-state-card" aria-label="South Carolina research location">
         <p class="journey-state-card__eyebrow">2025</p>
-        <h4 class="journey-state-card__title">South Carolina</h4>
         <div class="journey-state-card__map">
-          <img class="journey-state-card__map-image" src="{{ base_path }}/images/south-carolina-location-map.svg" alt="Map of South Carolina">
+          <div class="journey-state-card__map-shape journey-state-card__map-shape--south-carolina" aria-hidden="true"></div>
           <div class="journey-state-card__marker" data-city-marker style="--marker-x: 16.2761%; --marker-y: 15.6534%;">
             <span class="journey-state-card__pulse"></span>
             <span class="journey-state-card__dot"></span>
-            <span class="journey-state-card__city-label">Clemson</span>
           </div>
         </div>
       </aside>
@@ -80,12 +77,15 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
   document.addEventListener("DOMContentLoaded", function () {
     const section = document.getElementById("experience-journey");
     const path = document.getElementById("journey-connector-path");
+    const traveler = document.getElementById("journey-traveler-dot");
     const stops = section ? Array.from(section.querySelectorAll("[data-journey-stop]")) : [];
     const markers = section ? Array.from(section.querySelectorAll("[data-city-marker]")) : [];
 
-    if (!section || !path || stops.length < 2 || markers.length < 2) {
+    if (!section || !path || !traveler || stops.length < 2 || markers.length < 2) {
       return;
     }
+
+    const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 
     const setActiveStop = (activeIndex) => {
       stops.forEach((stop, index) => {
@@ -115,20 +115,26 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
     };
 
     const updateJourney = () => {
+      const secondStop = stops[1];
+      const secondRect = secondStop.getBoundingClientRect();
       const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
       const focusLine = viewportHeight * 0.8;
       updatePathGeometry();
+      const startLine = viewportHeight * 0.95;
+      const endLine = viewportHeight * 0.68;
+      const progress = clamp((startLine - secondRect.top) / (startLine - endLine), 0, 1);
+      const pathLength = path.getTotalLength();
+      const point = path.getPointAtLength(pathLength * progress);
       const activeIndex = stops.reduce((currentIndex, stop, index) => {
         return stop.getBoundingClientRect().top <= focusLine ? index : currentIndex;
       }, 0);
 
       setActiveStop(activeIndex);
+      traveler.setAttribute("cx", point.x.toFixed(2));
+      traveler.setAttribute("cy", point.y.toFixed(2));
     };
 
     updateJourney();
-    section.querySelectorAll(".journey-state-card__map-image").forEach((image) => {
-      image.addEventListener("load", updateJourney);
-    });
     window.addEventListener("scroll", updateJourney, { passive: true });
     window.addEventListener("resize", updateJourney);
   });
