@@ -46,6 +46,8 @@
   --particles-bg: #f3f4f6;     /* light gray background */
   --particles-node: #374151;   /* dark nodes */
   --particles-line: #6b7280;   /* darker gray edges */
+  --global-border-color: rgba(55, 65, 81, 0.3);
+  --global-dark-border-color: rgba(55, 65, 81, 0.42);
   --journey-card-bg: rgba(255, 255, 255, 0.62);
   --journey-card-border: rgba(55, 65, 81, 0.16);
   --journey-map-fill: rgba(255, 255, 255, 0.3);
@@ -61,6 +63,8 @@ body[data-theme="dark"] {
   --particles-bg: #111827;     /* dark background */
   --particles-node: #e5e7eb;   /* light nodes */
   --particles-line: #9ca3af;   /* light gray edges */
+  --global-border-color: rgba(229, 231, 235, 0.28);
+  --global-dark-border-color: rgba(229, 231, 235, 0.4);
   --journey-card-bg: rgba(17, 24, 39, 0.72);
   --journey-card-border: rgba(229, 231, 235, 0.12);
   --journey-map-fill: rgba(229, 231, 235, 0.08);
