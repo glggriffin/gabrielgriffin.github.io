@@ -31,7 +31,7 @@ GPA: 4.0/4.0
   </div>
   <figure class="about-experience__media">
     <img src="{{ base_path }}/images/Net%20Sys%20Photo.JPG" alt="NetSys Research Lab group photo">
-    <figcaption>NetSys Research Lab group photo (Dec. 2025).</figcaption>
+    <figcaption>NetSys Research Lab group photo (Dec. 2025)</figcaption>
   </figure>
 </div>
 
@@ -43,7 +43,7 @@ GPA: 4.0/4.0
   </div>
   <figure class="about-experience__media">
     <img src="{{ base_path }}/images/TRG%20Picture.jpg" alt="Tucker Research Group photo">
-    <figcaption>Tucker Research Group photo (Jul. 2025).</figcaption>
+    <figcaption>Tucker Research Group photo (Jul. 2025)</figcaption>
   </figure>
 </div>
 
