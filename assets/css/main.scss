@@ -205,6 +205,7 @@ body[data-theme="dark"] {
 }
 
 .journey-state-card {
+  position: relative;
   padding: 1rem 1rem 0.9rem;
   border: 1px solid var(--journey-card-border);
   border-radius: 22px;
@@ -231,41 +232,64 @@ body[data-theme="dark"] {
 }
 
 .journey-state-card__map {
-  display: block;
+  position: relative;
   width: 100%;
   max-width: 172px;
-  height: auto;
   margin-top: 0.8rem;
   overflow: visible;
 }
 
-.journey-state-card__outline {
-  fill: var(--journey-map-fill);
-  stroke: var(--journey-map-stroke);
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.journey-state-card__map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.94;
 }
 
-.journey-state-card__city circle:first-child {
-  fill: var(--journey-route);
-  stroke: var(--particles-bg);
-  stroke-width: 4;
+.journey-state-card__marker {
+  position: absolute;
+  left: var(--marker-x);
+  top: var(--marker-y);
+  width: 1px;
+  height: 1px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
-.journey-state-card__city text {
-  fill: var(--global-text-color);
-  font-size: 15px;
+.journey-state-card__dot {
+  position: absolute;
+  inset: auto;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--journey-route);
+  border: 3px solid var(--particles-bg);
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.06);
+}
+
+.journey-state-card__city-label {
+  position: absolute;
+  left: 12px;
+  top: -2px;
+  font-size: 0.9rem;
   font-weight: 700;
+  color: var(--global-text-color);
+  white-space: nowrap;
 }
 
 .journey-state-card__pulse {
-  fill: none;
-  stroke: var(--journey-city-glow);
-  stroke-width: 2.5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2.5px solid var(--journey-city-glow);
+  transform: translate(-50%, -50%) scale(0.55);
   opacity: 0;
-  transform-box: fill-box;
-  transform-origin: center;
 }
 
 .about-experience.is-active .journey-state-card {
@@ -279,65 +303,43 @@ body[data-theme="dark"] {
   animation: journey-pulse 1.8s ease-out infinite;
 }
 
-.experience-journey__connector {
-  width: min(100%, 188px);
-  padding: 0;
+.experience-journey {
+  position: relative;
 }
 
-.experience-journey__connector-label {
-  margin: 0 0 0.3rem;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--global-link-color-hover);
-  text-align: right;
-}
-
-.experience-journey__connector-map {
-  display: block;
+.experience-journey__overlay {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  max-width: 170px;
-  margin-left: auto;
-  height: auto;
+  height: 100%;
   overflow: visible;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .experience-journey__connector-path {
   fill: none;
   stroke: var(--journey-route);
-  stroke-width: 5;
-  stroke-linecap: round;
-  stroke-dasharray: 12 10;
-  filter: drop-shadow(0 6px 12px rgba(15, 23, 42, 0.18));
-}
-
-.experience-journey__connector-traveler {
-  fill: var(--journey-route);
-  stroke: var(--particles-bg);
   stroke-width: 4;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.experience-journey.is-traveling .experience-journey__connector-traveler {
-  opacity: 1;
+  stroke-linecap: round;
+  stroke-dasharray: 2 14;
+  filter: drop-shadow(0 6px 12px rgba(15, 23, 42, 0.18));
 }
 
 @keyframes journey-pulse {
   0% {
     opacity: 0.9;
-    transform: scale(0.55);
+    transform: translate(-50%, -50%) scale(0.55);
   }
 
   70% {
     opacity: 0;
-    transform: scale(1.12);
+    transform: translate(-50%, -50%) scale(1.12);
   }
 
   100% {
     opacity: 0;
-    transform: scale(1.2);
+    transform: translate(-50%, -50%) scale(1.2);
   }
 }
 
@@ -355,13 +357,6 @@ body[data-theme="dark"] {
   .journey-state-card {
     justify-self: end;
     margin-top: 0.35rem;
-    transform: translateX(0.35rem);
-  }
-
-  .experience-journey__connector {
-    justify-self: end;
-    margin-top: -0.5rem;
-    margin-bottom: -0.25rem;
     transform: translateX(0.35rem);
   }
 
