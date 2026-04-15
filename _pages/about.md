@@ -28,21 +28,8 @@ GPA: 4.0/4.0
 University of Oklahoma, Norman, OK  
 Sep 2025 - Present  
 
-- Conduct analysis of airline network resiliency using Dynamic Mode Decomposition (DMD).
-
 **Undergraduate Researcher**, Tucker Research Group  
 Clemson Industrial Engineering, Clemson, SC  
 May 2025 - Jul 2025  
-
-- Conducted research into regret in facility decision-making applied to parks in Greenville County, South Carolina.
-- Modeled decision-making context between park planners and recommendations.
-- Learned and applied mixed-integer and bi-level optimization methods in `gurobipy`.
-
-## Contact
-
-Email: [gabrielgriffin@ou.edu](mailto:gabrielgriffin@ou.edu)  
-Phone: 405-317-0807  
-LinkedIn: [gabriel-l-griffin](https://www.linkedin.com/in/gabriel-l-griffin)  
-GitHub: [glggriffin](https://github.com/glggriffin)
 
 </div>
