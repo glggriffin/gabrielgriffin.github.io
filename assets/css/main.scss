@@ -70,6 +70,11 @@ body[data-theme="dark"] {
   background: var(--particles-bg) !important;
 }
 
+.greedy-nav,
+.greedy-nav button {
+  background: transparent !important;
+}
+
 .page__footer {
   color: var(--global-text-color) !important;
 }
