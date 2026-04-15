@@ -64,6 +64,23 @@ body[data-theme="dark"] {
   background: var(--particles-bg);
 }
 
+.masthead,
+.masthead__menu-item,
+.page__footer {
+  background: var(--particles-bg) !important;
+}
+
+.page__footer {
+  color: var(--global-text-color) !important;
+}
+
+.page__footer .fas,
+.page__footer .fab,
+.page__footer .far,
+.page__footer .fal {
+  color: var(--global-text-color) !important;
+}
+
 .with-particles {
   position: relative;
   z-index: 1;

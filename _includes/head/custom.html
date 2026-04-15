@@ -17,10 +17,37 @@
 <!-- end custom head snippets -->
 
 <script>
-  function getParticleColor(varName) {
-    return getComputedStyle(document.documentElement)
+  function getParticleTheme() {
+    const savedTheme = document.documentElement.getAttribute("data-theme");
+    if (savedTheme === "dark") {
+      return "dark";
+    }
+
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  function getParticleColor(varName, fallback) {
+    const value = getComputedStyle(document.documentElement)
       .getPropertyValue(varName)
       .trim();
+
+    return value || fallback;
+  }
+
+  function getParticlePalette() {
+    if (getParticleTheme() === "dark") {
+      return {
+        background: getParticleColor("--particles-bg", "#111827"),
+        node: getParticleColor("--particles-node", "#e5e7eb"),
+        line: getParticleColor("--particles-line", "#9ca3af")
+      };
+    }
+
+    return {
+      background: getParticleColor("--particles-bg", "#f3f4f6"),
+      node: getParticleColor("--particles-node", "#374151"),
+      line: getParticleColor("--particles-line", "#6b7280")
+    };
   }
 
   function destroyParticles() {
@@ -45,7 +72,10 @@
       return;
     }
 
+    const palette = getParticlePalette();
+
     destroyParticles();
+    container.style.background = palette.background;
 
     particlesJS("particles-js", {
       particles: {
@@ -53,14 +83,14 @@
           value: 60,
           density: { enable: true, value_area: 800 }
         },
-        color: { value: getParticleColor("--particles-node") },
+        color: { value: palette.node },
         shape: { type: "circle" },
         opacity: { value: 0.35 },
         size: { value: 3, random: true },
         line_linked: {
           enable: true,
           distance: 180,
-          color: getParticleColor("--particles-line"),
+          color: palette.line,
           opacity: 0.2,
           width: 1
         },
