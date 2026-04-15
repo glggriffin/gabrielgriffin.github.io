@@ -73,37 +73,6 @@ body[data-theme="dark"] {
   --journey-route: #fbbf24;
 }
 
-body,
-.page,
-.page__content,
-.archive,
-.archive__item,
-.archive__item-excerpt,
-.archive__item-title,
-.sidebar,
-.author__content,
-.greedy-nav,
-.masthead,
-.page__footer,
-.cv-container,
-p,
-li,
-dd,
-dt,
-td,
-th,
-blockquote,
-figcaption,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 #particles-js {
   position: fixed;
   inset: 0;
@@ -196,12 +165,6 @@ h6 {
   gap: 1.25rem;
   align-items: start;
   padding: 0.2rem 0;
-}
-
-.about-experience__content {
-  display: grid;
-  gap: 1rem;
-  min-width: 0;
 }
 
 .about-experience__text p {
@@ -410,22 +373,27 @@ h6 {
 @media (min-width: 900px) {
   .about-experience {
     grid-template-columns: minmax(0, 1fr) minmax(150px, 188px);
+    grid-template-areas:
+      "text map"
+      "media media";
     gap: 1.5rem;
     align-items: start;
   }
 
-  .about-experience__content {
-    gap: 1.2rem;
-  }
-
   .about-experience__text {
+    grid-area: text;
     padding-top: 0.45rem;
   }
 
   .journey-state-card {
+    grid-area: map;
     justify-self: end;
     margin-top: 0.35rem;
     transform: translateX(0.35rem);
+  }
+
+  .about-experience__media {
+    grid-area: media;
   }
 
   .about-experience.is-active .journey-state-card {
