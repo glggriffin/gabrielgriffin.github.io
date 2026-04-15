@@ -22,7 +22,7 @@ Minor in Mathematics
 Expected Graduation: May 2027  
 GPA: 4.0/4.0
 
-## Research Experience
+## Experience
 
 **Undergraduate Research Assistant**, NetSys Research Lab  
 University of Oklahoma, Norman, OK  
