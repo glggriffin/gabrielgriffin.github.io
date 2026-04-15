@@ -25,7 +25,7 @@ author:
   # Biographic information
   avatar           : "headshot.jpeg"
   name             : "Gabriel Griffin"
-  pronouns         : "he/him" 
+  pronouns         : "He/Him" 
   bio              : "Undergraduate Industrial and Systems Engineering Student at the Unveristy of Oklahoma"
   location         : "Norman, Okahoma"
   employer         : "University of Oklahoma"
@@ -38,7 +38,7 @@ author:
   googlescholar    : 
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : 
+  orcid            : "https://orcid.org/0009-0006-9691-8087"
   semantic         : # URL
   ssrn             : # URL
   pubmed           : 
