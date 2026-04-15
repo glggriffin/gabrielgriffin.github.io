@@ -120,7 +120,7 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
       const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
       const focusLine = viewportHeight * 0.8;
       updatePathGeometry();
-      const startLine = viewportHeight * 1.02;
+      const startLine = viewportHeight * 0.9;
       const endLine = viewportHeight * 0.55;
       const progress = clamp((startLine - secondRect.top) / (startLine - endLine), 0, 1);
       const pathLength = path.getTotalLength();
