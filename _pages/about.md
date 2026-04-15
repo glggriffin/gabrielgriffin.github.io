@@ -1,3 +1,5 @@
+<div id="particles-js"></div>
+
 ---
 permalink: /
 title: "About Me"
