@@ -20,14 +20,36 @@
 
 <script>
 function getColor(varName) {
-  return getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
+  return getComputedStyle(document.documentElement)
+    .getPropertyValue(varName)
+    .trim();
+}
+
+function destroyParticles() {
+  if (window.pJSDom && window.pJSDom.length) {
+    window.pJSDom.forEach(instance => {
+      if (
+        instance &&
+        instance.pJS &&
+        instance.pJS.fn &&
+        instance.pJS.fn.vendors &&
+        typeof instance.pJS.fn.vendors.destroypJS === "function"
+      ) {
+        instance.pJS.fn.vendors.destroypJS();
+      }
+    });
+    window.pJSDom = [];
+  }
+
+  const el = document.getElementById("particles-js");
+  if (el) el.innerHTML = "";
 }
 
 function loadParticles() {
   const el = document.getElementById("particles-js");
   if (!el || typeof particlesJS === "undefined") return;
 
-  el.innerHTML = "";
+  destroyParticles();
 
   particlesJS("particles-js", {
     particles: {
@@ -75,9 +97,8 @@ function loadParticles() {
 document.addEventListener("DOMContentLoaded", function () {
   loadParticles();
 
-  // React to theme toggle (Academic Pages uses class changes)
   const observer = new MutationObserver(() => {
-    loadParticles();
+    requestAnimationFrame(loadParticles);
   });
 
   observer.observe(document.documentElement, {
@@ -85,8 +106,16 @@ document.addEventListener("DOMContentLoaded", function () {
     attributeFilter: ["class", "data-theme"]
   });
 
-  // React to system dark/light mode
-  window.matchMedia("(prefers-color-scheme: dark)")
-    .addEventListener("change", loadParticles);
+  observer.observe(document.body, {
+    attributes: true,
+    attributeFilter: ["class", "data-theme"]
+  });
+
+  const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  if (mediaQuery.addEventListener) {
+    mediaQuery.addEventListener("change", loadParticles);
+  } else if (mediaQuery.addListener) {
+    mediaQuery.addListener(loadParticles);
+  }
 });
 </script>
