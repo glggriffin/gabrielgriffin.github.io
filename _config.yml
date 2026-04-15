@@ -23,7 +23,7 @@ repository               : "glggriffin/glggriffin.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/Headshot.jpeg"
+  avatar           : "images/Headshot.jpeg"
   name             : "Gabriel Griffin"
   pronouns         : "he/him" 
   bio              : "Undergraduate Industrial and Systems Engineering Student at the Unveristy of Oklahoma"
