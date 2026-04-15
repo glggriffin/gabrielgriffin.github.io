@@ -38,7 +38,7 @@ Experience
   * Learned and applied mixed-integer and bi-level optimization methods in `gurobipy`.
   * Worked closely with others over an extended period in a research project.
 
-Publications
+Conference Proceedings - Reviewed
 ======
 * **Forthcoming - Accepted for Publication**
   * Griffin, GL, Fletcher, A., Goto, DN, Sabogal De La Pava, M., Jahan Beikloo, M., White, D., Tucker, EL. "Optimizing Park Locations with Imperfect Information." *IISE Annual Conference & Expo* (May 2026).
@@ -95,9 +95,3 @@ Certifications and Licenses
 * **Lean Six Sigma Yellow Belt**, University of Oklahoma, May 2024
 * **Human Subjects Protections - 69668690**, CITI Program, May 2025 - May 2027
 
-Contact
-======
-* Email: [gabrielgriffin@ou.edu](mailto:gabrielgriffin@ou.edu)
-* Phone: 405-317-0807
-* LinkedIn: [gabriel-l-griffin](https://www.linkedin.com/in/gabriel-l-griffin)
-* Location: Norman, Oklahoma
