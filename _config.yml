@@ -25,7 +25,7 @@ author:
   # Biographic information
   avatar           : "/images/Headshot.jpeg"
   name             : "Gabriel Griffin"
-  pronouns         : # example: "she/her"  
+  pronouns         : "he/him" 
   bio              : "Short biography for the left-hand sidebar"
   location         : "Norman, Okahoma"
   employer         : "University of Oklahoma"
