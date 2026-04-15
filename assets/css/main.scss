@@ -73,6 +73,37 @@ body[data-theme="dark"] {
   --journey-route: #fbbf24;
 }
 
+body,
+.page,
+.page__content,
+.archive,
+.archive__item,
+.archive__item-excerpt,
+.archive__item-title,
+.sidebar,
+.author__content,
+.greedy-nav,
+.masthead,
+.page__footer,
+.cv-container,
+p,
+li,
+dd,
+dt,
+td,
+th,
+blockquote,
+figcaption,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 #particles-js {
   position: fixed;
   inset: 0;
