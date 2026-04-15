@@ -24,12 +24,32 @@ GPA: 4.0/4.0
 
 ## Experience
 
-**Undergraduate Research Assistant**, NetSys Research Lab  
-University of Oklahoma, Norman, OK  
-Sep 2025 - Present  
+<div class="about-experience">
+  <div class="about-experience__text">
 
-**Undergraduate Researcher**, Tucker Research Group  
-Clemson Industrial Engineering, Clemson, SC  
-May 2025 - Jul 2025  
+  **Undergraduate Research Assistant**, NetSys Research Lab  
+  University of Oklahoma, Norman, OK  
+  Sep 2025 - Present
+
+  </div>
+  <figure class="about-experience__media">
+    <img src="{{ base_path }}/images/Net%20Sys%20Photo.JPG" alt="NetSys Research Lab group photo">
+    <figcaption>NetSys Research Lab group photo.</figcaption>
+  </figure>
+</div>
+
+<div class="about-experience">
+  <div class="about-experience__text">
+
+  **Undergraduate Researcher**, Tucker Research Group  
+  Clemson Industrial Engineering, Clemson, SC  
+  May 2025 - Jul 2025
+
+  </div>
+  <figure class="about-experience__media">
+    <img src="{{ base_path }}/images/TRG%20Picture.jpg" alt="Tucker Research Group photo">
+    <figcaption>Tucker Research Group photo.</figcaption>
+  </figure>
+</div>
 
 </div>

@@ -91,6 +91,35 @@ body[data-theme="dark"] {
   z-index: 1;
 }
 
+.about-experience {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.5rem 0 2rem;
+}
+
+.about-experience__media {
+  margin: 0;
+}
+
+.about-experience__media img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  display: block;
+}
+
+.about-experience__media figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .about-experience {
+    grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  }
+}
+
 body,
 .page,
 .page__inner-wrap,
