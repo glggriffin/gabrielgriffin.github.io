@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="with-particles" markdown="1">
 
-I am Gabriel Griffin, an Industrial and Systems Engineering student at the University of Oklahoma pursuing honors coursework with a minor in Mathematics. My academic interests include optimization, decision-making, and networked systems, and I use this site to document my research, experience, and professional development.
+Hello World! I'm currently an Undergraduate student in the School of Industrial and Systems Engineering at the University of Oklahoma with a minor in Mathematics. My academic interests include optimization, decision-making, and networked systems, and I use this site to document my research, experience, and professional development.
 
 I have worked as an undergraduate researcher at both the University of Oklahoma and Clemson University, with projects focused on airline network resiliency and optimization for park planning under imperfect information.
 
@@ -25,11 +25,9 @@ GPA: 4.0/4.0
 
 <div class="about-experience">
   <div class="about-experience__text">
-
-  **Undergraduate Research Assistant**, NetSys Research Lab  
-  University of Oklahoma, Norman, OK  
-  Sep 2025 - Present
-
+    <p><strong>Undergraduate Research Assistant</strong>, NetSys Research Lab<br>
+    University of Oklahoma, Norman, OK<br>
+    Sep 2025 - Present</p>
   </div>
   <figure class="about-experience__media">
     <img src="{{ base_path }}/images/Net%20Sys%20Photo.JPG" alt="NetSys Research Lab group photo">
@@ -39,11 +37,9 @@ GPA: 4.0/4.0
 
 <div class="about-experience">
   <div class="about-experience__text">
-
-  **Undergraduate Researcher**, Tucker Research Group  
-  Clemson Industrial Engineering, Clemson, SC  
-  May 2025 - Jul 2025
-
+    <p><strong>Undergraduate Researcher</strong>, Tucker Research Group<br>
+    Clemson Industrial Engineering, Clemson, SC<br>
+    May 2025 - Jul 2025</p>
   </div>
   <figure class="about-experience__media">
     <img src="{{ base_path }}/images/TRG%20Picture.jpg" alt="Tucker Research Group photo">
