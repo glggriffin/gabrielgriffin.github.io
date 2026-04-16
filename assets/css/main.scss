@@ -48,10 +48,11 @@
   --particles-line: #6b7280;   /* darker gray edges */
   --global-border-color: rgba(55, 65, 81, 0.3);
   --global-dark-border-color: rgba(55, 65, 81, 0.42);
-  --journey-card-bg: rgba(255, 255, 255, 0.62);
-  --journey-card-border: rgba(55, 65, 81, 0.16);
-  --journey-map-fill: rgba(255, 255, 255, 0.3);
-  --journey-map-stroke: rgba(55, 65, 81, 0.22);
+  --journey-card-bg: rgba(255, 255, 255, 0.82);
+  --journey-card-border: rgba(55, 65, 81, 0.22);
+  --journey-map-fill: rgba(55, 65, 81, 0.22);
+  --journey-map-fill-strong: rgba(31, 41, 55, 0.34);
+  --journey-map-stroke: rgba(17, 24, 39, 0.42);
   --journey-city-glow: rgba(245, 158, 11, 0.4);
   --journey-route: #d97706;
 }
@@ -65,10 +66,11 @@ body[data-theme="dark"] {
   --particles-line: #9ca3af;   /* light gray edges */
   --global-border-color: rgba(229, 231, 235, 0.28);
   --global-dark-border-color: rgba(229, 231, 235, 0.4);
-  --journey-card-bg: rgba(17, 24, 39, 0.72);
-  --journey-card-border: rgba(229, 231, 235, 0.12);
-  --journey-map-fill: rgba(229, 231, 235, 0.08);
-  --journey-map-stroke: rgba(229, 231, 235, 0.18);
+  --journey-card-bg: rgba(17, 24, 39, 0.82);
+  --journey-card-border: rgba(229, 231, 235, 0.18);
+  --journey-map-fill: rgba(229, 231, 235, 0.3);
+  --journey-map-fill-strong: rgba(255, 255, 255, 0.46);
+  --journey-map-stroke: rgba(255, 255, 255, 0.36);
   --journey-city-glow: rgba(251, 191, 36, 0.45);
   --journey-route: #fbbf24;
 }
@@ -247,11 +249,11 @@ body[data-theme="dark"] {
   display: block;
   width: 100%;
   height: auto;
-  background: var(--journey-card-bg);
+  background: linear-gradient(135deg, var(--journey-map-fill), var(--journey-map-fill-strong));
   filter:
-    drop-shadow(0 0 0.7px var(--journey-map-stroke))
-    drop-shadow(0 0 0.7px var(--journey-map-stroke))
-    drop-shadow(0 0 0.7px var(--journey-map-stroke));
+    drop-shadow(0 0 1.15px var(--journey-map-stroke))
+    drop-shadow(0 0 1.15px var(--journey-map-stroke))
+    drop-shadow(0 2px 4px rgba(15, 23, 42, 0.16));
 }
 
 .journey-state-card__map-shape--oklahoma {
