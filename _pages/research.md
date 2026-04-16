@@ -52,9 +52,9 @@ My research sits at the intersection of optimization, decision-making, and netwo
 ## Selected Outputs
 
 - **Conference paper:** "Optimizing Park Locations with Imperfect Information," accepted for the *IISE Annual Conference & Expo* (May 2026).  
-  [Lenses of Park Access PDF]({{ base_path }}/files/Lenses_of_Park_Access__Optimization_with_Indices_.pdf){: .btn .btn--primary}
+  [PDF]({{ base_path }}/files/Lenses_of_Park_Access__Optimization_with_Indices_.pdf){: .btn .btn--primary}
 - **Poster:** "Mapping Need: Geospatial Analysis for Optimizing Park Access," *CalGIS 2026*.
-- **Poster:** Griffin, GL, Fletcher, A., Goto, DN, Sabogal De La Pava, M., Jahan Beikloo, M., White, D., Tucker, EL. "Methods for Modeling Regret of Parameterization Choices," Undergraduate Research Poster Symposium, Clemson Creative Inquiry & Undergraduate Research (Jul 2025).  
+- **Poster:** "Methods for Modeling Regret of Parameterization Choices," Undergraduate Research Poster Symposium, Clemson Creative Inquiry & Undergraduate Research (Jul 2025).  
   [PDF]({{ base_path }}/files/HCORE%20Poster%20.pdf){: .btn .btn--primary}
 - **Presentation:** "Approaches to Consider Index Regret for Park Location Decisions," H-CORE REU final presentations at Clemson.
 
