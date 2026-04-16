@@ -21,20 +21,18 @@ That perspective shapes the kinds of questions I want to pursue in a PhD in Indu
 [Research Outputs]({{ base_path }}/publications/){: .btn .btn--inverse}
 [CV]({{ base_path }}/cv/){: .btn .btn--inverse}
 
-## Research Snapshot
+## Start Here
 
-- `Research agenda:` optimization and decision support under uncertainty, with applications in public systems and infrastructure.
+- `Research:` research agenda, flagship projects, methods, and current directions.
+- `Research Outputs:` conference proceedings, posters, and research-in-progress entries.
+- `CV:` education, coursework, honors, and a full record of experience and presentations.
+
+## Research At a Glance
+
+- `Research agenda:` optimization and decision support under uncertainty in public and infrastructure systems.
 - `Current work:` airline network resilience and dynamic recovery using Dynamic Mode Decomposition and network-based analysis.
 - `Flagship output:` accepted IISE conference proceedings paper on park-location optimization under imperfect information.
-- `Next step:` PhD study focused on decision-making models that remain useful when assumptions are incomplete or contested.
-
-## Methods & Tools
-
-- Mixed-integer optimization and decision models in `gurobipy`
-- Bi-level and regret-aware modeling for public planning problems
-- Network optimization and resilience analysis
-- Dynamic Mode Decomposition for evolving system behavior
-- Statistical analysis and data-driven decision making in `Python`, `R`, `SAS`, `Excel`, and `Minitab`
+- `Methods:` mixed-integer optimization, bi-level and regret-aware modeling, network optimization, and data-driven analysis.
 
 ## Research Direction
 
