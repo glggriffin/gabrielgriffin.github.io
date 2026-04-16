@@ -56,6 +56,6 @@ My research sits at the intersection of optimization, decision-making, and netwo
 - **Poster:** "Mapping Need: Geospatial Analysis for Optimizing Park Access," *CalGIS 2026*.
 - **Poster:** "Methods for Modeling Regret of Parameterization Choices," Undergraduate Research Poster Symposium, Clemson Creative Inquiry & Undergraduate Research (Jul 2025).  
   [PDF]({{ base_path }}/files/HCORE%20Poster%20.pdf){: .btn .btn--primary}
-- **Presentation:** "Approaches to Consider Index Regret for Park Location Decisions," H-CORE REU final presentations at Clemson.
+- **Presentation:** "Approaches to Consider Index Regret for Park Location Decisions," H-CORE REU final presentations at Clemson (Jul. 2025).
 
 </div>
