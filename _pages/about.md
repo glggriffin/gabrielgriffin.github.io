@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="with-particles" markdown="1">
 
-I am an undergraduate student in Industrial and Systems Engineering at the University of Oklahoma with interests in optimization, decision-making, and public-sector systems. I study how to make better decisions when information is incomplete and resources are constrained, especially in systems that shape public outcomes.
+Hello World! I am an undergraduate student in Industrial and Systems Engineering at the University of Oklahoma with interests in optimization, decision-making, and public good applications. I study how to make better decisions when information is incomplete and resources are constrained, especially in systems that shape public outcomes.
 
 My work focuses on applying optimization methods to problems that directly affect the public good, including infrastructure planning, resource allocation, and policy-driven decision systems. I am particularly interested in settings where decision-makers must act using simplified models or limited information, and in how those limitations influence outcomes.
 
