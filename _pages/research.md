@@ -51,8 +51,6 @@ My research sits at the intersection of optimization, decision-making, and netwo
 
 ## Selected Outputs
 
-I think of papers and presentations as outputs of the projects above rather than the center of the page, but a few current highlights are:
-
 - **Conference paper:** "Optimizing Park Locations with Imperfect Information," accepted for the *IISE Annual Conference & Expo* (May 2026).  
   [Lenses of Park Access]({{ base_path }}/files/Lenses_of_Park_Access__Optimization_with_Indices_.pdf)
 - **Poster:** "Mapping Need: Geospatial Analysis for Optimizing Park Access," *CalGIS 2026*.
