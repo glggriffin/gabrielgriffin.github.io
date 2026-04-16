@@ -52,7 +52,7 @@ My research sits at the intersection of optimization, decision-making, and netwo
 ## Selected Outputs
 
 - **Conference paper:** "Optimizing Park Locations with Imperfect Information," accepted for the *IISE Annual Conference & Expo* (May 2026).  
-  [Lenses of Park Access]({{ base_path }}/files/Lenses_of_Park_Access__Optimization_with_Indices_.pdf)
+  [PDF]({{ base_path }}/files/Lenses_of_Park_Access__Optimization_with_Indices_.pdf)
 - **Poster:** "Mapping Need: Geospatial Analysis for Optimizing Park Access," *CalGIS 2026*.
 - **Presentation:** "Approaches to Consider Index Regret for Park Location Decisions," H-CORE REU final presentations at Clemson.
 
