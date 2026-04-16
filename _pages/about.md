@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Me"
+title: "Research Overview"
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,13 +9,36 @@ redirect_from:
 
 <div class="with-particles" markdown="1">
 
-Hello World! I am an undergraduate student in Industrial and Systems Engineering at the University of Oklahoma with interests in optimization, decision-making, and public good applications. I study how to make better decisions when information is incomplete and resources are constrained, especially in systems that shape public outcomes.
+I am an undergraduate researcher in Industrial and Systems Engineering at the University of Oklahoma studying optimization under imperfect information, especially in public and infrastructure systems. My work asks how decision-makers should act when models are simplified, data are incomplete, and resources are constrained.
 
-My work focuses on applying optimization methods to problems that directly affect the public good, including infrastructure planning, resource allocation, and policy-driven decision systems. I am particularly interested in settings where decision-makers must act using simplified models or limited information, and in how those limitations influence outcomes.
+I am building that agenda through two connected streams of work: regret-aware optimization for public planning and resilience analysis for large transportation networks. Across both, I am interested in how mathematical models can remain useful when the information available to the decision-maker is incomplete, imperfect, or changing over time.
 
-That perspective shapes the kinds of research questions I want to pursue and the environments where I do my best work. I am drawn to research groups that use mathematical modeling to study difficult real-world systems while staying grounded in the public consequences of those decisions.
+Recent outputs include an accepted conference proceedings paper at the *IISE Annual Conference & Expo*, poster presentations on park-access modeling and parameterization regret, and current research in the NetSys Research Lab on airline network disruption and recovery.
 
-I plan to pursue a PhD in Industrial Engineering, with the goal of developing optimization frameworks that better reflect the constraints and informational limits faced by real decision-makers. I am especially interested in applications in public policy and nonprofit operations, where better decision tools can have meaningful societal impact.
+That perspective shapes the kinds of questions I want to pursue in a PhD in Industrial Engineering or Operations Research: optimization frameworks that better reflect the informational limits and modeling tradeoffs faced by real decision-makers, especially in public-good settings.
+
+[Research]({{ base_path }}/research/){: .btn .btn--primary}
+[Research Outputs]({{ base_path }}/publications/){: .btn .btn--inverse}
+[CV]({{ base_path }}/cv/){: .btn .btn--inverse}
+
+## Research Snapshot
+
+- `Research agenda:` optimization and decision support under uncertainty, with applications in public systems and infrastructure.
+- `Current work:` airline network resilience and dynamic recovery using Dynamic Mode Decomposition and network-based analysis.
+- `Flagship output:` accepted IISE conference proceedings paper on park-location optimization under imperfect information.
+- `Next step:` PhD study focused on decision-making models that remain useful when assumptions are incomplete or contested.
+
+## Methods & Tools
+
+- Mixed-integer optimization and decision models in `gurobipy`
+- Bi-level and regret-aware modeling for public planning problems
+- Network optimization and resilience analysis
+- Dynamic Mode Decomposition for evolving system behavior
+- Statistical analysis and data-driven decision making in `Python`, `R`, `SAS`, `Excel`, and `Minitab`
+
+## Research Direction
+
+Each project on this site is evidence for the same broader research direction: decision support is only as strong as the assumptions behind it. I am especially interested in models that stay informative even when data are incomplete, objectives are imperfect proxies, or the real system is more complex than the optimization model can fully represent.
 
 ## Research Journey
 
@@ -28,8 +51,8 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
     <div class="about-experience" data-journey-stop="norman">
       <div class="about-experience__text">
         <h3><a href="https://andresdgonzalez.com/">NetSys Research Lab</a></h3>
-        <p>The NetSys Research Lab at the University of Oklahoma focuses on modeling and optimizing the performance, robustness, and resilience of cyber-physical-social systems and interdependent networks.</p>
-        <p>The group's work spans complex infrastructure and networked systems, with particular emphasis on how optimization and systems modeling can support more resilient decision-making.</p>
+        <p>The NetSys Research Lab at the University of Oklahoma studies the performance, robustness, and resilience of cyber-physical-social systems and interdependent networks.</p>
+        <p>My current work examines airline network resilience through Dynamic Mode Decomposition and network-based analysis, with the goal of understanding how disruptions propagate and how large transportation systems recover over time.</p>
       </div>
       <aside class="journey-state-card" aria-label="Oklahoma research location">
         <p class="journey-state-card__eyebrow">2025-2026</p>
@@ -51,8 +74,8 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
       <div class="about-experience__text">
         <h3><a href="https://sites.google.com/view/emilyltucker/home?authuser=0">Tucker Research Group</a></h3>
         <p>The Tucker Research Group at Clemson University studies how operations research can improve access, social good, and decision-making in systems under strain.</p>
-        <p>The lab develops optimization methods for problems with real public impact, especially where limited resources, uncertainty, and system-level tradeoffs shape the choices decision-makers can make.</p>
-         <p>I was a member during my time participating in the Human-Centered Operations Research and Engineering (<a href="https://cecas.clemson.edu/hcore/">H-CORE</a>) REU at Clemson University.</p>
+        <p>During the Human-Centered Operations Research and Engineering (<a href="https://cecas.clemson.edu/hcore/">H-CORE</a>) REU, I worked on park-access optimization in Greenville County, South Carolina, studying how different need indices and modeling assumptions change recommended investment decisions.</p>
+        <p>That project led to an accepted IISE conference paper, multiple poster presentations, and my continuing interest in regret-aware optimization for public planning.</p>
       </div>
       <aside class="journey-state-card" aria-label="South Carolina research location">
         <p class="journey-state-card__eyebrow">2025</p>

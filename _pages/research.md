@@ -9,49 +9,77 @@ author_profile: true
 
 <div class="with-particles" markdown="1">
 
-My research sits at the intersection of optimization, decision-making, and networked systems. I'm especially interested in projects where mathematical models can help people make better decisions under uncertainty in systems that communities rely on for their well being or are publically funded. 
+My research agenda centers on optimization and decision-making under imperfect information. I am especially interested in public and infrastructure systems where models must stay useful even when data are incomplete, objectives are simplified, and real decisions are shaped by operational constraints that are hard to encode perfectly.
 
 
 <div class="research-projects">
   <section class="research-project">
     <div class="research-project__body">
-      <p class="research-project__eyebrow">Current research idea</p>
-      <h2>Airline Network Dynamic Recovery</h2>
-      <p class="research-project__meta">NetSys Research Lab - University of Oklahoma</p>
+      <p class="research-project__eyebrow">Flagship project</p>
+      <h2>Optimization of Park Access with Imperfect Information</h2>
+      <p class="research-project__meta">Tucker Research Group - Clemson Industrial Engineering</p>
 
-      <p>I am interested in how airline networks respond to disruption and how network structure shapes resilience. This work asks how large transportation systems absorb disruptions, where they are most vulnerable, and what kinds of models help explain those patterns.</p>
+      <p>This project studies how planners should make park-location decisions when measures of need disagree. Rather than treating a single accessibility index as ground truth, the work asks how optimization models can account for disagreement across indices and remain useful when the decision environment is only imperfectly represented.</p>
 
-      <p>My current research uses Dynamic Mode Decomposition and network-based analysis to study how system behavior evolves over time. More broadly, I see this area as a way to connect optimization and network science to questions about infrastructure reliability and planning under uncertainty. All models rely on quality data, and this project helps provide better parameter knowledge on large scale public infrastructure.</p>
+      <p><strong>Contribution:</strong> helped frame park siting as a decision problem under imperfect information and shifted the analysis from a single recommended solution toward regret-aware comparisons across competing need formulations.</p>
 
-      <p><strong>Why it matters:</strong> transportation networks are public-facing systems, and better models of resilience can support stronger planning decisions when disruptions are unavoidable.</p>
+      <p><strong>Method:</strong> applied mixed-integer and bi-level optimization ideas in <code>gurobipy</code> to compare how alternative park-access indices change facility recommendations in Greenville County, South Carolina.</p>
+
+      <p><strong>Output:</strong> this work led to the accepted conference proceedings paper <em>Optimizing Park Locations with Imperfect Information</em> at the <em>IISE Annual Conference &amp; Expo</em>, along with posters and presentations on geospatial analysis and parameterization regret.</p>
+
+      <p><strong>Why it matters:</strong> public planning models are most helpful when they stay honest about uncertainty instead of hiding it behind a single index or scoring rule.</p>
+
+      <p>
+        <a href="{{ base_path }}/files/Lenses_of_Park_Access__Optimization_with_Indices_.pdf" class="btn btn--primary">Conference Paper PDF</a>
+        <a href="{{ base_path }}/publications/" class="btn btn--inverse">See All Outputs</a>
+      </p>
     </div>
   </section>
 
   <section class="research-project">
     <div class="research-project__body">
-      <p class="research-project__eyebrow">Research idea</p>
-      <h2>Optimization of Park Access with Imperfect Information</h2>
-      <p class="research-project__meta">Tucker Research Group - Clemson Industrial Engineering</p>
+      <p class="research-project__eyebrow">Current project</p>
+      <h2>Airline Network Dynamic Recovery</h2>
+      <p class="research-project__meta">NetSys Research Lab - University of Oklahoma</p>
 
-      <p>I am interested in how optimization can support public planning when decision-makers must act with incomplete information and limited resources. My work on park accessibility focused on how planners evaluate need, how those evaluations depend on modeling assumptions, and how different scoring systems can produce conflicting recommendations.</p>
+      <p>This project examines how airline networks respond to disruption and how network structure shapes resilience. The core question is how large transportation systems absorb shocks, where they are most vulnerable, and what kinds of dynamic models best capture recovery behavior over time.</p>
 
-      <p>This led me to questions about regret-based optimization, robustness, and the gap between a mathematical model and the real setting it is meant to inform. That broader idea continues to shape how I think about public-sector decision support.</p>
+      <p><strong>Contribution:</strong> developing a systems-level view of disruption and recovery that connects transportation resilience questions to my broader interest in decision-making under uncertainty.</p>
 
-      <p><strong>Why it matters:</strong> choices about public resources can have lasting community effects, and models are most useful when they stay honest about the uncertainty built into those decisions.</p>
+      <p><strong>Method:</strong> using Dynamic Mode Decomposition and network-based analysis to study how system behavior evolves over time and to identify patterns that static summaries can miss.</p>
+
+      <p><strong>Current direction:</strong> using airline networks as a public-facing infrastructure setting where better resilience models can support stronger planning decisions when disruptions are unavoidable.</p>
+
+      <p><strong>Why it matters:</strong> transportation networks are visible public systems, and better models of resilience can improve how disruptions are understood, anticipated, and managed.</p>
     </div>
   </section>
 </div>
 
+## Research Trajectory
+
+- `Coursework foundation:` deterministic system modeling, data-driven decision making, network optimization, and probabilistic systems modeling.
+- `REU research:` public-sector optimization under imperfect information through park-access modeling at Clemson.
+- `Research outputs:` accepted IISE conference proceedings paper plus multiple posters and presentations.
+- `Current extension:` resilience analysis for large transportation networks in the NetSys Research Lab.
+
+## Methods & Tools
+
+- Mixed-integer optimization in `gurobipy`
+- Bi-level optimization and regret-aware decision modeling
+- Network optimization and systems modeling
+- Dynamic Mode Decomposition for temporal network behavior
+- Statistical and computational analysis in `Python`, `R`, `SAS`, `Excel`, and `Minitab`
+
 ## Project Themes
 
-- Resilience in large-scale networked systems
 - Optimization under uncertainty and imperfect information
-- Decision support for public and infrastructure planning
-- Mathematical models that stay connected to real decision contexts
+- Public systems, infrastructure, and access
+- Resilience in large-scale networked systems
+- Decision support that stays connected to real decision contexts
 
 ## Selected Outputs
 
-- **Conference paper:** "Optimizing Park Locations with Imperfect Information," accepted for the *IISE Annual Conference & Expo* (May 2026).  
+- **Conference proceedings:** "Optimizing Park Locations with Imperfect Information," accepted for the *IISE Annual Conference & Expo* (May 2026).  
   [PDF]({{ base_path }}/files/Lenses_of_Park_Access__Optimization_with_Indices_.pdf){: .btn .btn--primary}
 - **Poster:** "Mapping Need: Geospatial Analysis for Optimizing Park Access," *CalGIS 2026*.
 - **Poster:** "Methods for Modeling Regret of Parameterization Choices," Undergraduate Research Poster Symposium, Clemson Creative Inquiry & Undergraduate Research (Jul 2025).  
