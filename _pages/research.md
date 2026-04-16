@@ -9,18 +9,19 @@ author_profile: true
 
 <div class="with-particles" markdown="1">
 
-My research sits at the intersection of optimization, decision-making, and networked systems. I'm especially interested in projects where mathematical models can help people make better decisions under uncertainty, whether that means improving infrastructure resilience or supporting public planning.
+My research sits at the intersection of optimization, decision-making, and networked systems. I'm especially interested in projects where mathematical models can help people make better decisions under uncertainty in systems that communities rely on for their well being or are publically funded. 
+
 
 <div class="research-projects">
   <section class="research-project">
     <div class="research-project__body">
       <p class="research-project__eyebrow">Current research idea</p>
-      <h2>Airline Network Resiliency and Disruption Response</h2>
+      <h2>Airline Network Dynamic Recovery</h2>
       <p class="research-project__meta">NetSys Research Lab - University of Oklahoma</p>
 
-      <p>I am interested in how airline networks respond to disruption and how network structure shapes resilience. This work asks how large transportation systems absorb shocks, where they are most vulnerable, and what kinds of models help explain those patterns.</p>
+      <p>I am interested in how airline networks respond to disruption and how network structure shapes resilience. This work asks how large transportation systems absorb disruptions, where they are most vulnerable, and what kinds of models help explain those patterns.</p>
 
-      <p>My current research uses Dynamic Mode Decomposition and network-based analysis to study how system behavior evolves over time. More broadly, I see this area as a way to connect optimization and network science to questions about infrastructure reliability and planning under uncertainty.</p>
+      <p>My current research uses Dynamic Mode Decomposition and network-based analysis to study how system behavior evolves over time. More broadly, I see this area as a way to connect optimization and network science to questions about infrastructure reliability and planning under uncertainty. All models rely on quality data, and this project helps provide better parameter knowledge on large scale public infrastructure.</p>
 
       <p><strong>Why it matters:</strong> transportation networks are public-facing systems, and better models of resilience can support stronger planning decisions when disruptions are unavoidable.</p>
     </div>
@@ -29,7 +30,7 @@ My research sits at the intersection of optimization, decision-making, and netwo
   <section class="research-project">
     <div class="research-project__body">
       <p class="research-project__eyebrow">Research idea</p>
-      <h2>Optimization of Park Access Under Imperfect Information</h2>
+      <h2>Optimization of Park Access with Imperfect Information</h2>
       <p class="research-project__meta">Tucker Research Group - Clemson Industrial Engineering</p>
 
       <p>I am interested in how optimization can support public planning when decision-makers must act with incomplete information and limited resources. My work on park accessibility focused on how planners evaluate need, how those evaluations depend on modeling assumptions, and how different scoring systems can produce conflicting recommendations.</p>
