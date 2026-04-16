@@ -52,7 +52,7 @@ I plan to pursue a PhD in Industrial Engineering, with the goal of developing op
         <h3><a href="https://sites.google.com/view/emilyltucker/home?authuser=0">Tucker Research Group</a></h3>
         <p>The Tucker Research Group at Clemson University studies how operations research can improve access, social good, and decision-making in systems under strain.</p>
         <p>The lab develops optimization methods for problems with real public impact, especially where limited resources, uncertainty, and system-level tradeoffs shape the choices decision-makers can make.</p>
-         <p>I was a member during my time participating at the Human Cenetered Operations Research and Engineering (H-CORE) REU at Clemson University. </p>
+         <p>I was a member during my time participating in the Human-Centered Operations Research and Engineering (<a href="https://cecas.clemson.edu/hcore/">H-CORE</a>) REU at Clemson University.</p>
       </div>
       <aside class="journey-state-card" aria-label="South Carolina research location">
         <p class="journey-state-card__eyebrow">2025</p>
