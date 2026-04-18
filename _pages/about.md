@@ -46,7 +46,7 @@ I include only a few projects here to show the kinds of modeling questions and t
 
 ### Optimization of Park Access with Imperfect Information
 
-<span class="project-badge project-badge--research">Research project</span>
+<span class="project-badge" style="display:inline-flex;align-items:center;margin:0 0 0.85rem;padding:0.28rem 0.72rem;border:1px solid rgba(14,116,144,0.28);border-radius:999px;background:rgba(14,116,144,0.12);color:#0f766e;font-size:0.78rem;font-weight:700;letter-spacing:0.03em;line-height:1;">Research project</span>
 
 - Studies how park-location recommendations change when competing measures of need disagree.
 - I took the main role in formulating and coding the model, wrote the methods section, and edited the full paper text.
@@ -54,7 +54,7 @@ I include only a few projects here to show the kinds of modeling questions and t
 
 ### Airline Network Dynamic Recovery
 
-<span class="project-badge project-badge--current">Current research project</span>
+<span class="project-badge" style="display:inline-flex;align-items:center;margin:0 0 0.85rem;padding:0.28rem 0.72rem;border:1px solid rgba(37,99,235,0.28);border-radius:999px;background:rgba(37,99,235,0.12);color:#1d4ed8;font-size:0.78rem;font-weight:700;letter-spacing:0.03em;line-height:1;">Current research project</span>
 
 - Examines how airline networks respond to disruption and recover over time.
 - Uses Dynamic Mode Decomposition and network-based analysis to study resilience patterns that static summaries can miss.
@@ -62,7 +62,7 @@ I include only a few projects here to show the kinds of modeling questions and t
 
 ### Multi-Objective Workforce Scheduling Under Preference Constraints
 
-<span class="project-badge project-badge--course">Course project</span>
+<span class="project-badge" style="display:inline-flex;align-items:center;margin:0 0 0.85rem;padding:0.28rem 0.72rem;border:1px solid rgba(180,83,9,0.28);border-radius:999px;background:rgba(180,83,9,0.12);color:#b45309;font-size:0.78rem;font-weight:700;letter-spacing:0.03em;line-height:1;">Course project</span>
 
 - Developed a bi-objective integer programming model to balance staffing coverage with employee shift preferences in a real scheduling setting.
 - Applied the `epsilon`-constraint method to generate a Pareto frontier under availability, shift-limit, and leadership constraints.
