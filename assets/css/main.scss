@@ -156,6 +156,65 @@ body[data-theme="dark"] {
   color: var(--global-text-color-light);
 }
 
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 0.85rem;
+  padding: 0.28rem 0.72rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+
+.project-badge--research,
+.project-badge--current {
+  background: rgba(14, 116, 144, 0.12);
+  border-color: rgba(14, 116, 144, 0.28);
+  color: #0f766e;
+}
+
+.project-badge--current {
+  background: rgba(37, 99, 235, 0.12);
+  border-color: rgba(37, 99, 235, 0.28);
+  color: #1d4ed8;
+}
+
+.project-badge--course {
+  background: rgba(180, 83, 9, 0.12);
+  border-color: rgba(180, 83, 9, 0.28);
+  color: #b45309;
+}
+
+html.dark .project-badge--research,
+body.dark .project-badge--research,
+html[data-theme="dark"] .project-badge--research,
+body[data-theme="dark"] .project-badge--research {
+  background: rgba(45, 212, 191, 0.14);
+  border-color: rgba(45, 212, 191, 0.32);
+  color: #7dd3fc;
+}
+
+html.dark .project-badge--current,
+body.dark .project-badge--current,
+html[data-theme="dark"] .project-badge--current,
+body[data-theme="dark"] .project-badge--current {
+  background: rgba(96, 165, 250, 0.16);
+  border-color: rgba(96, 165, 250, 0.34);
+  color: #93c5fd;
+}
+
+html.dark .project-badge--course,
+body.dark .project-badge--course,
+html[data-theme="dark"] .project-badge--course,
+body[data-theme="dark"] .project-badge--course {
+  background: rgba(251, 191, 36, 0.14);
+  border-color: rgba(251, 191, 36, 0.3);
+  color: #fcd34d;
+}
+
 .experience-journey__entries {
   display: grid;
   gap: 1.75rem;

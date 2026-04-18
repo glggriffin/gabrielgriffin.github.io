@@ -46,7 +46,7 @@ I include only a few projects here to show the kinds of modeling questions and t
 
 ### Optimization of Park Access with Imperfect Information
 
-`Research project`
+<span class="project-badge project-badge--research">Research project</span>
 
 - Studies how park-location recommendations change when competing measures of need disagree.
 - I took the main role in formulating and coding the model, wrote the methods section, and edited the full paper text.
@@ -54,7 +54,7 @@ I include only a few projects here to show the kinds of modeling questions and t
 
 ### Airline Network Dynamic Recovery
 
-`Current research project`
+<span class="project-badge project-badge--current">Current research project</span>
 
 - Examines how airline networks respond to disruption and recover over time.
 - Uses Dynamic Mode Decomposition and network-based analysis to study resilience patterns that static summaries can miss.
@@ -62,7 +62,7 @@ I include only a few projects here to show the kinds of modeling questions and t
 
 ### Multi-Objective Workforce Scheduling Under Preference Constraints
 
-`Course project`
+<span class="project-badge project-badge--course">Course project</span>
 
 - Developed a bi-objective integer programming model to balance staffing coverage with employee shift preferences in a real scheduling setting.
 - Applied the `epsilon`-constraint method to generate a Pareto frontier under availability, shift-limit, and leadership constraints.
