@@ -42,7 +42,7 @@ Each project on this site is evidence for the same broader research direction: d
 
 ## Selected Projects
 
-I include only a few projects here, and I label them directly. My goal is not to present coursework as research, but to show the kinds of modeling questions and technical tradeoffs that shape my research trajectory.
+I include only a few projects here to show the kinds of modeling questions and technical tradeoffs that shape my research trajectory.
 
 ### Optimization of Park Access with Imperfect Information
 

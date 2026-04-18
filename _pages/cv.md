@@ -75,6 +75,8 @@ Relevant Coursework
 
 * **Deterministic System Modeling**, Aug 2025 - Dec 2025
   * Coursework included linear programming, integer programming, and solving techniques using Python.
+  * Final project: multi-objective workforce scheduling under preference constraints using integer programming.
+  [DSM Scheduling Project Report]({{ base_path }}/files/DSM_Final_Project.pdf){: .btn .btn--inverse}
 
 Memberships and Affiliations
 ======
