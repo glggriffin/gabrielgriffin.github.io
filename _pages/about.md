@@ -67,7 +67,7 @@ I include only a few projects here to show the kinds of modeling questions and t
 <span class="project-badge project-badge--course">Course project</span>
 
 - Developed a bi-objective integer programming model to balance staffing coverage with employee shift preferences in a real scheduling setting.
-- Applied the `epsilon`-constraint method to generate a Pareto frontier under availability, shift-limit, and leadership constraints.
+- Applied the <span class="project-inline-tag">epsilon</span>-constraint method to generate a Pareto frontier under availability, shift-limit, and leadership constraints.
 - Found that improving coverage typically required increasing unwanted assignments almost one-for-one, highlighting a tight tradeoff between operational and human-centered objectives.
 - Reflects my broader interest in decision-making under competing objectives and constrained information.
 

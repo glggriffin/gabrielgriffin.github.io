@@ -188,6 +188,18 @@ body[data-theme="dark"] {
   color: #b45309;
 }
 
+.project-inline-tag {
+  display: inline-block;
+  padding: 0.08rem 0.42rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+  background: #f8fafc;
+  color: #334155;
+  font-size: 0.88em;
+  line-height: 1.2;
+  vertical-align: baseline;
+}
+
 .selected-projects {
   --selected-project-code-bg: #f8fafc;
   --selected-project-code-border: rgba(148, 163, 184, 0.35);
@@ -228,6 +240,15 @@ body[data-theme="dark"] .project-badge--course {
   background: rgba(251, 191, 36, 0.14);
   border-color: rgba(251, 191, 36, 0.3);
   color: #fcd34d;
+}
+
+html.dark .project-inline-tag,
+body.dark .project-inline-tag,
+html[data-theme="dark"] .project-inline-tag,
+body[data-theme="dark"] .project-inline-tag {
+  background: #f8fafc;
+  border-color: rgba(148, 163, 184, 0.35);
+  color: #334155;
 }
 
 html.dark .selected-projects,
