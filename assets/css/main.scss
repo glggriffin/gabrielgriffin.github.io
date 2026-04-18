@@ -171,21 +171,36 @@ body[data-theme="dark"] {
 
 .project-badge--research,
 .project-badge--current {
-  background: rgba(14, 116, 144, 0.12);
-  border-color: rgba(14, 116, 144, 0.28);
+  background: rgba(14, 116, 144, 0.07);
+  border-color: rgba(14, 116, 144, 0.22);
   color: #0f766e;
 }
 
 .project-badge--current {
-  background: rgba(37, 99, 235, 0.12);
-  border-color: rgba(37, 99, 235, 0.28);
+  background: rgba(37, 99, 235, 0.07);
+  border-color: rgba(37, 99, 235, 0.22);
   color: #1d4ed8;
 }
 
 .project-badge--course {
-  background: rgba(180, 83, 9, 0.12);
-  border-color: rgba(180, 83, 9, 0.28);
+  background: rgba(180, 83, 9, 0.07);
+  border-color: rgba(180, 83, 9, 0.22);
   color: #b45309;
+}
+
+.selected-projects {
+  --selected-project-code-bg: #f8fafc;
+  --selected-project-code-border: rgba(148, 163, 184, 0.35);
+}
+
+.selected-projects a > code,
+.selected-projects figcaption > code,
+.selected-projects li > code,
+.selected-projects p > code,
+.selected-projects td > code {
+  background: var(--selected-project-code-bg);
+  border-color: var(--selected-project-code-border);
+  box-shadow: none;
 }
 
 html.dark .project-badge--research,
@@ -213,6 +228,14 @@ body[data-theme="dark"] .project-badge--course {
   background: rgba(251, 191, 36, 0.14);
   border-color: rgba(251, 191, 36, 0.3);
   color: #fcd34d;
+}
+
+html.dark .selected-projects,
+body.dark .selected-projects,
+html[data-theme="dark"] .selected-projects,
+body[data-theme="dark"] .selected-projects {
+  --selected-project-code-bg: rgba(248, 250, 252, 0.08);
+  --selected-project-code-border: rgba(148, 163, 184, 0.3);
 }
 
 .experience-journey__entries {
