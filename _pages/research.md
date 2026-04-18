@@ -21,9 +21,9 @@ My research agenda centers on optimization and decision-making under imperfect i
 
       <p>This project studies how planners should make park-location decisions when measures of need disagree. Rather than treating a single accessibility index as ground truth, the work asks how optimization models can account for disagreement across indices and remain useful when the decision environment is only imperfectly represented.</p>
 
-      <p><strong>Contribution:</strong> helped frame park siting as a decision problem under imperfect information and shifted the analysis from a single recommended solution toward regret-aware comparisons across competing need formulations.</p>
+      <p><strong>Contribution:</strong> I took the main role in formulating and implementing the optimization model in <code>gurobipy</code>, with the technical work centered on how competing need formulations should shape public planning recommendations under imperfect information.</p>
 
-      <p><strong>Method:</strong> applied mixed-integer and bi-level optimization ideas in <code>gurobipy</code> to compare how alternative park-access indices change facility recommendations in Greenville County, South Carolina.</p>
+      <p><strong>Method:</strong> modeled park siting as a comparison across alternative index-driven decision problems, using mixed-integer and bi-level optimization ideas to study how different need formulations change recommended facility investments in Greenville County, South Carolina.</p>
 
       <p><strong>Output:</strong> this work led to the accepted conference proceedings paper <em>Optimizing Park Locations with Imperfect Information</em> at the <em>IISE Annual Conference &amp; Expo</em>, along with posters and presentations on geospatial analysis and parameterization regret.</p>
 

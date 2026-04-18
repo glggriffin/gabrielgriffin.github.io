@@ -17,6 +17,8 @@ Recent outputs include an accepted conference proceedings paper at the *IISE Ann
 
 That perspective shapes the kinds of questions I want to pursue in a PhD in Industrial Engineering or Operations Research: optimization frameworks that better reflect the informational limits and modeling tradeoffs faced by real decision-makers, especially in public-good settings.
 
+I also highlight a small number of selected projects when they show the same broader research habits: problem formulation, careful modeling choices, and interpretation of tradeoffs. Some of that work comes from research settings and some from coursework, but I aim to present all of it transparently and selectively.
+
 [Research]({{ base_path }}/research/){: .btn .btn--primary}
 [Research Outputs]({{ base_path }}/publications/){: .btn .btn--inverse}
 [CV]({{ base_path }}/cv/){: .btn .btn--inverse}
@@ -37,6 +39,37 @@ That perspective shapes the kinds of questions I want to pursue in a PhD in Indu
 ## Research Direction
 
 Each project on this site is evidence for the same broader research direction: decision support is only as strong as the assumptions behind it. I am especially interested in models that stay informative even when data are incomplete, objectives are imperfect proxies, or the real system is more complex than the optimization model can fully represent.
+
+## Selected Projects
+
+I include only a few projects here, and I label them directly. My goal is not to present coursework as research, but to show the kinds of modeling questions and technical tradeoffs that shape my research trajectory.
+
+### Optimization of Park Access with Imperfect Information
+
+`Research project`
+
+- Studies how park-location recommendations change when competing measures of need disagree.
+- I took the main role in formulating and coding the model, wrote the methods section, and edited the full paper text.
+- Led to an accepted conference proceedings paper, poster presentations, and ongoing work on parameterization regret in public planning.
+
+### Airline Network Dynamic Recovery
+
+`Current research project`
+
+- Examines how airline networks respond to disruption and recover over time.
+- Uses Dynamic Mode Decomposition and network-based analysis to study resilience patterns that static summaries can miss.
+- Extends my interest in decision support under imperfect information to large transportation systems.
+
+### Multi-Objective Workforce Scheduling Under Preference Constraints
+
+`Course project`
+
+- Developed a bi-objective integer programming model to balance staffing coverage with employee shift preferences in a real scheduling setting.
+- Applied the `epsilon`-constraint method to generate a Pareto frontier under availability, shift-limit, and leadership constraints.
+- Found that improving coverage typically required increasing unwanted assignments almost one-for-one, highlighting a tight tradeoff between operational and human-centered objectives.
+- Reflects my broader interest in decision-making under competing objectives and constrained information.
+
+[Scheduling Project Report]({{ base_path }}/files/DSM_Final_Project.pdf){: .btn .btn--inverse}
 
 ## Research Journey
 
